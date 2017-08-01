@@ -21,7 +21,12 @@ app.all('*', (req, res, next) => {
 // 引入api与使用路由
 const materialApi = require('./api/materialApi')
 app.use('/api/material', materialApi)
-
+const chanpinApi = require('./api/chanpinApi')
+app.use('/api/chanpin', chanpinApi)
+const kucunApi = require('./api/kucunApi')
+app.use('/api/kucun', kucunApi)
+const kucunliuApi = require('./api/kucunliuApi')
+app.use('/api/kucunliu', kucunliuApi)
 // 监听端口
 app.listen(4001)
 console.log('success listen at port:4001......')

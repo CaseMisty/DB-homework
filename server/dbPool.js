@@ -1,15 +1,3 @@
-// 数据库连接配置
-/*
-module.exports = {
-  mysql: {
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'pm',
-    port: '3306'
-  }
-}
-*/
 var mysql = require('mysql')
 var pool = mysql.createPool({
   host: 'localhost',
@@ -20,8 +8,9 @@ var pool = mysql.createPool({
   // 可同时多条SQL执行
   multipleStatements: true
 })
-// module.exports = pool
+module.exports = pool
 
+/*
 // 导出查询相关
 // var query = function (sql, vals, callback) {
 //   pool.getConnection(function (err, conn) {
@@ -36,5 +25,4 @@ var pool = mysql.createPool({
 //       })
 //     }
 //   })
-// }
-module.exports = pool
+// } */
