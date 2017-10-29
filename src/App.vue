@@ -4,7 +4,7 @@
       <el-tab-pane label="nc注册页" name="zc">
         <ncSign></ncSign>
       </el-tab-pane>
-      <el-tab-pane label="材料" name="材料">
+      <!-- <el-tab-pane label="材料" name="材料">
         <material></material>
       </el-tab-pane>
       <el-tab-pane label="产品" name="产品">
@@ -15,7 +15,7 @@
       </el-tab-pane>
       <el-tab-pane label="库存流水" name="库存流水">
         <kucunliu></kucunliu>
-      </el-tab-pane>
+      </el-tab-pane> -->
     </el-tabs>
   </div>
 </template>
